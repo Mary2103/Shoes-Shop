@@ -1,0 +1,64 @@
+:root {
+    --main-color: #FE3741;
+    --line-color: #232020;
+    --text-color: #333;
+    --white-color: #fff;
+    --border-color:#dbdbdb;
+    --background: #efefef;
+}
+
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /*16px, 1 rem = 16px*/
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Responsive */
+
+.grid {
+    width: 1200px; /*với những màn hình > 1200px thì kích thước tối đa của .grid là 1200px. Còn nếu với 
+    những màn hình mà < 1200px thì sẽ max-width sẽ giúp điều chỉnh 
+    grid để làm nhỏ lại */
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid_row {
+    display: flex;/* Những thẻ được chứa trong class này thì sẽ nằm trên một hàng ngang*/
+    flex-wrap: wrap;/* tổng độ dài mà lớn hơn grid_row thì sẽ cho xuống hàng*/
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/* test */
+
+.grid_column-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
+
+/* .grid_column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+ 
+.grid_column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+.grid_column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+} */
+
