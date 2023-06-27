@@ -5,6 +5,8 @@
     --white-color: #fff;
     --border-color:#dbdbdb;
     --background: #efefef;
+    --star-gold-color: #ffce3d;
+
 }
 
 
@@ -27,6 +29,7 @@ html {
     những màn hình mà < 1200px thì sẽ max-width sẽ giúp điều chỉnh 
     grid để làm nhỏ lại */
     max-width: 100%;
+    position: relative;
     margin: 0 auto;
 }
 
@@ -40,6 +43,7 @@ html {
 /* test */
 
 .grid_column-4 {
+    padding-top: 5px;
     padding-left: 5px;
     padding-right: 5px;
     width: 25%;
@@ -62,3 +66,16 @@ html {
     width: 83.3334%;
 } */
 
+.see-all--link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    position: absolute;
+    right: 0;
+    top: -20px ;
+}
+
+.see-all--link:hover {
+    color: var(--main-color);
+    font-weight: 600;
+}
