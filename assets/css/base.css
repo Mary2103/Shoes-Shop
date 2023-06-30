@@ -1,5 +1,5 @@
 :root {
-    --main-color: #FE3741;
+    --main-color: #fe3741;
     --line-color: #232020;
     --text-color: #333;
     --white-color: #fff;
@@ -43,9 +43,7 @@ html {
 /* test */
 
 .grid_column-4 {
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 5px;
     width: 25%;
 }
 

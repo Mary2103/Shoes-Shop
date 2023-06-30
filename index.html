@@ -13,6 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/@icon/themify-icons@1.0.1-alpha.3/themify-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./js/header.js">
     <link rel="stylesheet" href="./js/slider.js">
+    <link rel="stylesheet" href="./js/tabs.js">
    
     <title>Nike</title>
 </head>
@@ -22,6 +23,7 @@
         <header class="header">
             <script type="text/javascript" src="./js/header.js"></script>
             <script type="text/javascript" src="./js/slider.js"></script>
+            <script type="text/javascript" src="./js/tabs.js"></script>
             <div class="grid">
                 <div class="header__navbar">
                     <div class="header__logo">
@@ -443,7 +445,7 @@
             <div class="home__banner-image">
                 <div class="home__banner-overlay--shape"></div>
                 <div class="home__banner-overlay--circle"></div>
-                <div class="home__banner-overlay--text">ABOUT</div>
+                <span class="home__banner-overlay--text">ABOUT</span>
                 <div class="home__banner--img">
                     <img src="./assets/img/man.png">
                 </div>
@@ -452,7 +454,7 @@
             <div class="home__banner--content">
                 <p class="home__banner--heading">Sport Shoes</p>
                 <span>Fashion Style</span>
-                <p>
+                <p class="home__banner--text">
                     Dynamically coordinate business relationships for transparent deliverables.<br>
                     Objectively deliver pandemic web-readiness without visionary technology.<br>
                     Proactively generate cost effective user business.
@@ -469,14 +471,14 @@
 
         <div class="home__collection">
             <h3 class="home__collection--heading">Our <span>Collection</span></h3>
-            <div class="home__collection-tab">
-                <button class="home__category-tablinks">All</button>
-                <button class="home__category-tablinks">Men</button>
-                <button class="home__category-tablinks">Women</button>
-                <button class="home__category-tablinks">Kids</button>
+            <div class="tab">
+                <button class="tablinks" onclick="tabs(event, 'All')" id="defaultOpen">All</button>
+                <button class="tablinks" onclick="tabs(event, 'Men')">Men</button>
+                <button class="tablinks" onclick="tabs(event, 'Women')">Women</button>
+                <button class="tablinks" onclick="tabs(event, 'Kids')">Kids</button>
             </div>
 
-            <div class="home__product--container">
+            <div id="All" class="home__product--container tabcontent">
                 <div class="grid">
                     <a class="see-all--link" href="">See all
                         <i class="fa-solid fa-angles-right"></i>
@@ -636,7 +638,7 @@
 
                                 
                                 <h4 class="home__collection-item-heading">Nike Air Max 270</h4>
-                                <h4 class="home__collection-category">Kid's shoes</h4>
+                                <h4 class="home__collection-category">Kids' shoes</h4>
                                 <div class="home__collection-item-price">
                                     <span class="home__collection-item-currentPrice">$18.99</span>
                                     <span class="home__collection-item-oldPrice">$20.99</span>
@@ -673,7 +675,7 @@
 
                                 
                                 <h4 class="home__collection-item-heading">Nike Air Max Dawn</h4>
-                                <h4 class="home__collection-category">Kid's shoes</h4>
+                                <h4 class="home__collection-category">Kids' shoes</h4>
                                 <div class="home__collection-item-price">
                                     <span class="home__collection-item-currentPrice">$18.99</span>
                                     <span class="home__collection-item-oldPrice">$20.99</span>
@@ -712,7 +714,7 @@
 
                                 
                                 <h4 class="home__collection-item-heading">Nike Air Max 90 Toggle</h4>
-                                <h4 class="home__collection-category">Kid's shoes</h4>
+                                <h4 class="home__collection-category">Kids' shoes</h4>
                                 <div class="home__collection-item-price">
                                     <span class="home__collection-item-currentPrice">$18.99</span>
                                     <span class="home__collection-item-oldPrice">$20.99</span>
@@ -749,7 +751,933 @@
 
                                 
                                 <h4 class="home__collection-item-heading">Nike Dynamo Go </h4>
-                                <h4 class="home__collection-category">Kid's shoes</h4>
+                                <h4 class="home__collection-category">Kids' shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+
+                        
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="Men" class="home__product--container tabcontent">
+                <div class="grid">
+                    <a class="see-all--link" href="">See all
+                        <i class="fa-solid fa-angles-right"></i>
+                    </a>
+                    <div class="grid_row">
+                        
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                        
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3bbded7c-371f-4a16-ada3-4bfc6ae522df/air-max-90-shoes-kRsBnD.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Air Max 90</h4>
+                                <h4 class="home__collection-category">Men's shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/597481c6-05ea-4b1a-86c2-ff798c592863/air-huarache-shoes-lCV2vJ.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Air Huarache Premium</h4>
+                                <h4 class="home__collection-category">Men's shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/f411a3ec-39b7-490e-b2c8-335264adb054/air-max-95-shoes-CwsxnW.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Air Max 95</h4>
+                                <h4 class="home__collection-category">Men's shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/da1b52f3-552c-405d-a789-5a8c1ed3f7fd/e-series-1-shoes-j57hxR.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike E-Series 1.0</h4>
+                                <h4 class="home__collection-category">Men's shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+                                
+                            </a>
+                            
+                        </div>
+
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/edf63e23-4200-4d64-9c7f-239518907825/jordan-stadium-90-shoes-Jn6ZH4.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Jordan Stadium 90</h4>
+                                <h4 class="home__collection-category">Men's shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4800ce1e-512d-49f6-b977-ef78bb26c23b/air-max-systm-shoes-hLmQ85.png);">
+                                   
+                                </div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Air Max SYSTM</h4>
+                                <h4 class="home__collection-category">Men's shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bc4ea557-e918-4ff5-af44-4bc71f97eb28/air-max-plus-shoes-pFKxz0.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Air Max Plus</h4>
+                                <h4 class="home__collection-category">Men's shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bf40a001-5495-4e63-b696-7a0b4283a92f/waffle-one-se-shoes-3jxNhF.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Waffle One SE</h4>
+                                <h4 class="home__collection-category">Men's shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="Women" class="home__product--container tabcontent">
+                <div class="grid">
+                    <a class="see-all--link" href="">See all
+                        <i class="fa-solid fa-angles-right"></i>
+                    </a>
+                    <div class="grid_row">
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/87d7e901-4d08-4456-9d62-07e821aff45b/air-max-90-futura-shoes-x9msLm.png);"></div>
+                                
+                                <h4 class="home__collection-item-heading">Nike Air Max 90 Futura</h4>
+                                <h4 class="home__collection-category">Women's shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+            
+                                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+    
+                                
+                            </a>
+
+                            
+                        </div>
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                        
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/4ff2fe4a-4f74-4189-82f0-3ea780f9389d/air-max-excee-shoes-XXdkKj.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Air Max Excee</h4>
+                                <h4 class="home__collection-category">Women's shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4621066a-6e19-49e5-a2d7-4e7e5eade298/air-force-1-shadow-shoes-mN8Glx.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Air Force 1 Shadow</h4>
+                                <h4 class="home__collection-category">Women's shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8d6ec7db-5575-462f-804c-8694044f4b06/tech-hera-shoes-JlV5km.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Tech Hera</h4>
+                                <h4 class="home__collection-category">Women's shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/10ae600e-0b18-4d11-920c-b8bcdb857eb3/court-legacy-lift-shoes-1zLxsK.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Court Legacy Lift</h4>
+                                <h4 class="home__collection-category">Women's shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+                                
+                            </a>
+                            
+                        </div>
+
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/179e23ab-dfae-4a3e-a295-fc2f44e98d4f/air-huarache-craft-shoes-Xf0QhN.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Air Huarache Craft</h4>
+                                <h4 class="home__collection-category">Women's shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/92c62463-2965-4aef-974b-3fd4f8807e4f/air-force-1-07-shoes-5ttFDf.png);">
+                                   
+                                </div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Air Force 1 '07</h4>
+                                <h4 class="home__collection-category">Women's shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/602188c3-be75-4aa0-aab0-5fa4b59e0927/air-force-1-pltaform-lv8-shoes-bQSqmJ.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Air Force 1 PLT.AF.ORM LV8</h4>
+                                <h4 class="home__collection-category">Women's shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+
+                        
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="Kids" class="home__product--container tabcontent">
+                <div class="grid">
+                    <a class="see-all--link" href="">See all
+                        <i class="fa-solid fa-angles-right"></i>
+                    </a>
+                    <div class="grid_row">
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/45dfffb5-c5e1-4be5-a931-1a8bc166e721/flex-plus-2-older-running-shoes-PbFFJC.png);"></div>
+                                
+                                <h4 class="home__collection-item-heading">Nike Flex Plus 2</h4>
+                                <h4 class="home__collection-category">Kids' shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+            
+                                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+    
+                                
+                            </a>
+
+                            
+                        </div>
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                        
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c1e323fd-acc5-4581-831c-4a1d31972906/jordan-stadium-90-older-shoes-2J5HrK.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Jordan Stadium 90</h4>
+                                <h4 class="home__collection-category">Kids' shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9d3ce94e-9f0e-46d9-b1ec-2ef1069a41df/air-force-1-lv8-older-shoes-BWHxJx.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Air Force 1 LV8</h4>
+                                <h4 class="home__collection-category">Kids' shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b5aedc81-3e85-4bd2-9b77-d43aeb8faa7c/air-force-1-older-shoes-1GxH0J.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Air Force 1</h4>
+                                <h4 class="home__collection-category">Kids' shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f9e7b076-da72-419c-aaf5-86c8a2785cbb/pico-5-shoes-QQ5g1N.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Pico 5</h4>
+                                <h4 class="home__collection-category">Kids' shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+                                
+                            </a>
+                            
+                        </div>
+
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fc7cb765-c53e-494b-85e0-9ea483a6cd03/team-hustle-d-11-younger-shoes-5FsXFk.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Team Hustle D 11</h4>
+                                <h4 class="home__collection-category">Kids' shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/0e7978b9-6305-4912-af20-6b77ea104ed7/air-max-90-toggle-younger-shoe-W2Tl2K.png);">
+                                   
+                                </div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Air Max 90 Toggle</h4>
+                                <h4 class="home__collection-category">Kids' shoes</h4>
+                                <div class="home__collection-item-price">
+                                    <span class="home__collection-item-currentPrice">$18.99</span>
+                                    <span class="home__collection-item-oldPrice">$20.99</span>
+                                </div>
+                                            
+                                <div class="home__collection-action">
+                                    <div class="home__collection-item__rating">
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                        <i class=" fa-solid fa-star"></i>
+                                    </div>
+
+                                    <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                 
+                                </div>
+                
+                                <a href="" class="add-cart--link">
+                                    <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                Add to cart
+                                </a>
+
+                                
+                            </a>
+                            
+                        </div>
+
+
+                        <div class="grid_column-4">
+                           
+                            <a href="" class="home__product--item">
+                                <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/cc622c2f-b34c-45a0-975f-3e1135ea7f79/dynamo-go-younger-easy-on-off-shoes-dCf2Zv.png);"></div>
+
+                                
+                                <h4 class="home__collection-item-heading">Nike Dynamo Go </h4>
+                                <h4 class="home__collection-category">Kids' shoes</h4>
                                 <div class="home__collection-item-price">
                                     <span class="home__collection-item-currentPrice">$18.99</span>
                                     <span class="home__collection-item-oldPrice">$20.99</span>
@@ -785,8 +1713,78 @@
 
             </div>
         </div>
+        
+        <div class="home__banner">
+            <span class="home__banner--firsttext">WHY CHOOSE US</span>
+            <div class="home__banner--content">
+                <p class="home__banner--heading">The best Shoes</p>
+                <span>The Best People</span>
+                <p>
+                    Dynamically coordinate business relationships for transparent deliverables.
+                    Objectively deliver pandemic<br> web-readiness without visionary technology.
+                    Proactively generate cost effective user business.
+                </p>  
+                
+                <div class="home__banner-bestShoes">
+                    <div class="home__bestShoes">
+                    
+                        <div class="home__banner-bestShoes--icon">
+                            <i class="fa-solid fa-shoe-prints" style="color: #fe3741;"></i>
+                        </div>
+        
+                        <p class="home__banner-bestShoes-heading">Designed Padded Insole</p>
+                        <p class="home__banner-bestShoes-content">Manufactured products team building core compentencies standards</p>
+                        
+                    </div>
+    
+                    <div class="home__bestShoes">
+                        
+                        <div class="home__banner-bestShoes--icon">
+                            <i class="fa-solid fa-shoe-prints" style="color: #fe3741;"></i>
+                        </div>
+        
+                        <p class="home__banner-bestShoes-heading">Ultra Durable Rubber Sole</p>
+                        <p class="home__banner-bestShoes-content">Manufactured products team building core compentencies standards</p>
+                        
+                    </div>
+    
+                    <div class="home__bestShoes">
+                        
+                        <div class="home__banner-bestShoes--icon">
+                            <i class="fa-solid fa-shoe-prints" style="color: #fe3741;"></i>
+                        </div>
+        
+                        <p class="home__banner-bestShoes-heading">Breathable Lightweight</p>
+                        <p class="home__banner-bestShoes-content">Manufactured products team building core compentencies standards</p>
+                        
+                    </div>
+                </div>
+                
+            </div>
+    
+            <div class="home__banner-bestShoes--img">
+                <div class="bestShoes-img--left">
+                    <img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/g1ljiszo4qhthfpluzbt/123-joyride-cdp-apla-xa-xp.jpg">
+                    <p>4.9
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <br>120K TOTAL REVIEW
+                    </p>
+                </div>
 
+                <div class="bestShoes-img--right">
+                    <img class="bestShoes-img--right-1" src="./assets/img/1h.jpg" alt="">
+                    <img class="bestShoes-img--right-2" src="./assets/img/giay3.jpg" alt="">
+                </div>
+            </div>
+            
+            
+        </div>
     </div>
+
 
     
 </body>
