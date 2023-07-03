@@ -10,7 +10,7 @@ function tabs(evt, categoryName) {
   tablinks = document.getElementsByClassName("tablinks");
 
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace("active", "");
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
 
   document.getElementById(categoryName).style.display = "block";
@@ -18,8 +18,16 @@ function tabs(evt, categoryName) {
 }
 
 
-window.onload = function () {
-  // Gọi hàm tabs với event và categoryName bằng với id của phần tử "defaultOpen"
-  document.getElementById("defaultOpen").click();
-};
 
+
+
+
+
+  window.onload = function () {
+    // Gọi hàm tabs với event và categoryName bằng với id của phần tử "defaultOpen"
+    document.getElementById("default").click()
+    document.getElementById("defaultOpen").click();
+
+  };
+
+  

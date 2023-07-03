@@ -20,6 +20,17 @@ function tabs2(evt, categoryName) {
 
 window.onload = function () {
   // Gọi hàm tabs với event và categoryName bằng với id của phần tử "defaultOpen"
-  document.getElementById("defaultOpen").click();
+  document.getElementById("default").click();
 };
+
+// window.addEventListener("load", function () 
+//   setTimeout(function(){
+//     document.getElementById("default").click();
+
+//   },0)); 
+  // Gọi hàm tabs với event và categoryName bằng với id của phần tử "defaultOpen"
+  // window.addEventListener("load", function () {
+  //   // Gọi hàm tabs với event và categoryName bằng với id của phần tử "defaultOpen"
+  //   document.getElementById("default").click();
+  // });
 
