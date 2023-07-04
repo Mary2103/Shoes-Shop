@@ -1185,3 +1185,26 @@
     text-align: center;
     display: inline;
 }
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    width: 40px;
+    height: 40px;
+    background-color: var(--white-color);
+    color: var(--main-color);
+    cursor: pointer;
+    bottom: 30px;
+    right: 30px;
+    transition: all linear 2s;
+}
+
+
+#myBtn:hover {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}

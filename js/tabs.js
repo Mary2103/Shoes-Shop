@@ -1,3 +1,5 @@
+
+
 function tabs(evt, categoryName) {
   let i, tabcontent, tablinks;
 
@@ -17,16 +19,10 @@ function tabs(evt, categoryName) {
   evt.currentTarget.className += " active";
 }
 
-
-
-
-
-
-
   window.onload = function () {
     // Gọi hàm tabs với event và categoryName bằng với id của phần tử "defaultOpen"
-    document.getElementById("default").click()
     document.getElementById("defaultOpen").click();
+   
 
   };
 

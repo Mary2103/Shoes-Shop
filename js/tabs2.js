@@ -1,16 +1,18 @@
+
+
 function tabs2(evt, categoryName) {
-  let i, tabcontent, tablinks;
+  let i, tabcontent2, tablinks2;
 
-  tabcontent = document.getElementsByClassName("tabcontent");
+  tabcontent2 = document.getElementsByClassName("tabcontent2");
 
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+  for (i = 0; i < tabcontent2.length; i++) {
+    tabcontent2[i].style.display = "none";
   }
 
-  tablinks = document.getElementsByClassName("tablinks");
+  tablinks2 = document.getElementsByClassName("tablinks2");
 
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace("active", "");
+  for (i = 0; i < tablinks2.length; i++) {
+    tablinks2[i].className = tablinks2[i].className.replace("active", "");
   }
 
   document.getElementById(categoryName).style.display = "block";
@@ -23,14 +25,5 @@ window.onload = function () {
   document.getElementById("default").click();
 };
 
-// window.addEventListener("load", function () 
-//   setTimeout(function(){
-//     document.getElementById("default").click();
 
-//   },0)); 
-  // Gọi hàm tabs với event và categoryName bằng với id của phần tử "defaultOpen"
-  // window.addEventListener("load", function () {
-  //   // Gọi hàm tabs với event và categoryName bằng với id của phần tử "defaultOpen"
-  //   document.getElementById("default").click();
-  // });
 

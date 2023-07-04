@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./js/header.js">
     <link rel="stylesheet" href="./js/slider.js">
     <link rel="stylesheet" href="./js/tabs.js">
+    <link rel="stylesheet" href="./js/scrollToTop.js">
     <!-- <link rel="stylesheet" href="./js/tabs2.js"> -->
    
     <title>Nike</title>
@@ -22,10 +23,6 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <script type="text/javascript" src="./js/header.js"></script>
-            <script type="text/javascript" src="./js/slider.js"></script>
-            <script type="text/javascript" src="./js/tabs.js"></script>
-            <!-- <script type="text/javascript" src="./js/tabs2.js"></script> -->
             <div class="grid">
                 <div class="header__navbar">
                     <div class="header__logo">
@@ -44,11 +41,11 @@
                         </li>
 
                         <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">Product</a>
+                            <a href="" class="header__navbar-item-link">Men</a>
                         </li>
 
                         <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">Blog</a>
+                            <a href="" class="header__navbar-item-link">Women</a>
                         </li>
 
                         <li class="header__navbar-item">
@@ -152,11 +149,7 @@
             <i class="fa-solid fa-chevron-left slider-prev " onclick="prev()"></i>
             <i class="fa-solid fa-chevron-right slider-next" onclick="next()"></i>
             
-            <ul class="slider-dots">
-                <li class="slider-dot-item active " onclick="currentSlide(1)" ></li>
-                <li class="slider-dot-item" onclick="currentSlide(2)" ></li>
-                <li class="slider-dot-item" onclick="currentSlide(3)" ></li>
-            </ul>
+        
 
         </div>
        
@@ -1791,23 +1784,23 @@
             <span class="home__feedback--heading">What's Our Client Say</span>
 
             <div class="tab-around tab">
-                <button class="client tablinks" onclick="tabs(event, '1')" id="default">
+                <button class="client tablinks2" style="display: block;" onclick="tabs2(event, '1')" id="default">
                     <img src="https://www.zenpilot.com/hs-fs/hubfs/kyle-harms-headshot.jpg?width=75&height=75&name=kyle-harms-headshot.jpg" alt="">
                 </button>
 
-                <button class="client tablinks" onclick="tabs(event, '2')">
+                <button class="client tablinks2" onclick="tabs2(event, '2')">
                     <img src="https://www.zenpilot.com/hs-fs/hubfs/andrew-cole-fat-earth.jpeg?width=75&height=75&name=andrew-cole-fat-earth.jpeg" alt="">
                 </button>
 
-                <button class="client tablinks" onclick="tabs(event, '3')">
+                <button class="client tablinks2" onclick="tabs2(event, '3')">
                     <img src="https://www.zenpilot.com/hs-fs/hubfs/arianne%20foulks-headshot.jpg?width=75&height=75&name=arianne%20foulks-headshot.jpg" alt="">
                 </button>
 
-                <button class="client tablinks" onclick="tabs(event, '4')">
+                <button class="client tablinks2" onclick="tabs2(event, '4')">
                     <img src="https://www.zenpilot.com/hs-fs/hubfs/chris-dubois-headshot.jpg?width=75&height=75&name=chris-dubois-headshot.jpg" alt="">
                 </button>
 
-                <button class="client tablinks" onclick="tabs(event, '5')">
+                <button class="client tablinks2" onclick="tabs2(event, '5')">
                     <img src="https://www.zenpilot.com/hs-fs/hubfs/Kevin%20darcy-headshot.jpg?width=75&height=75&name=Kevin%20darcy-headshot.jpg" alt="">
                 </button>
 
@@ -1815,32 +1808,31 @@
 
             
            <div class="home__feedback-container">
-                <div id="1" class="home__feedback-item tabcontent">
+                <div id="1" class="home__feedback-item tabcontent2">
                     <p class="home__client-name">Kyle Harms</p>
                     <span class="home__feedback-content">I'm a huge fan of NIKE shoes. They are always high-quality, fashionable, and comfortable. I especially love these ones because they are versatile and can be worn for different occasions. They are also easy to clean and maintain. NIKE never disappoints me</span>
                 </div>
 
-                <div id="2" class="home__feedback-item tabcontent">
+                <div id="2" class="home__feedback-item tabcontent2" style="display: none;">
                     <p class="home__client-name">Andrew Cole</p>
                     <span class="home__feedback-content">They are super light and flexible, but also sturdy and supportive. They hug my feet and make me feel like I'm walking on air. They are also very breathable and keep my feet cool and dry. These are the best shoes for running or working out.</span>
                 </div>
 
-                <div id="3" class="home__feedback-item tabcontent">
+                <div id="3" class="home__feedback-item tabcontent2" style="display: none;">
                     <p class="home__client-name">Arianne Foulks</p>
                     <span class="home__feedback-content">NIKE has the best customer service I have ever experienced. They are friendly, helpful, and responsive. They always answer my questions and solve my problems. They also offer free shipping, returns, and exchanges. NIKE cares about their customers and their satisfaction</span>
                 </div>
 
-                <div id="4" class="home__feedback-item tabcontent">
+                <div id="4" class="home__feedback-item tabcontent2" style="display: none;">
                     <p class="home__client-name">Kyle Harms</p>
                     <span class="home__feedback-content">I have flat feet and these shoes provide the right amount of arch support and comfort. They are also very durable and resistant to wear and tear. They are the only shoes I wear for walking or hiking</span>
                 </div>
 
-                <div id="5" class="home__feedback-item tabcontent">
+                <div id="5" class="home__feedback-item tabcontent2"style="display: none;">
                     <p class="home__client-name">Josh Crouch</p>
                     <span class="home__feedback-content">These NIKE shoes are a bargain for the quality and style they offer. They are sleek, elegant, and classy. They fit perfectly and are very comfortable. They also go well with any outfit, whether casual or formal. These are the best shoes for any occasion.</span>
                 </div>
            </div>
-        </div>
         
         <p class="thank">Thank you for choosing us !</p>
         <footer class="footer">
@@ -1934,9 +1926,18 @@
                 </div>
             </div>
         </footer>
+
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="fa-solid fa-angles-up"></i>
+        </button>
     </div>
 
-
+    <script type="text/javascript" src="./js/header.js"></script>
+    <script type="text/javascript" src="./js/slider.js"></script>
+    <script type="text/javascript" src="./js/tabs2.js"></script>
+    <script type="text/javascript" src="./js/tabs.js"></script>
+    <script type="text/javascript" src="./js/scrollToTop.js"></script>
     
 </body>
 </html>
