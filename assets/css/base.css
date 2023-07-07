@@ -58,6 +58,24 @@ html {
     padding-right: 5px;
     width: 20%;
 }
+
+.grid_column-1-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
+
+.grid_column-3-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 75%;
+}
+.grid_column-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33.3333%;
+    padding-bottom: 10px;
+}
 .grid_column-10 {
     padding-left: 5px;
     padding-right: 5px;

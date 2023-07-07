@@ -1090,16 +1090,13 @@
     background-color: var(--white-color);
 }
 
-.footer--logo {
-    text-align: center;
-}
-
 .grid_column-2-4 a {
     display: block;
     text-decoration: none;
     color: var(--text-color);
     font-size: 1.2rem;
     line-height: 3rem;
+    text-align: left;
 }
 
 .footer-heading {
@@ -1171,19 +1168,13 @@
     color: var(--white-color);
 }
 
-.footer_bottom {
-    margin-bottom: 10px;
-}
+
 
 .footer_bottom-wr {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-}
-.footer_text {
-    text-align: center;
-    display: inline;
 }
 
 
@@ -1207,4 +1198,127 @@
 #myBtn:hover {
     background-color: var(--main-color);
     color: var(--white-color);
+}
+
+
+.product__header {
+    margin-top: 150px;
+    margin-bottom: 20px;
+    display: flex;
+
+}
+.product__header-title {
+    flex: 1;
+    padding: 6px 6px 6px 0;
+}
+.product__header-nav {
+    display: flex;
+}
+.product__showFilter,.product__header-sort {
+    background-color: white;
+    border: none;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 6px;
+    cursor: pointer;
+}
+.product__showFilter:hover {
+    background-color: var(--border-color);
+    font-weight:600;
+}
+
+
+.filer-text {
+    
+}
+.product__header-sort {
+    
+}
+.product__header-sort-btn {
+    
+}
+
+.sort-title {
+    
+}
+.product--wrapper {
+
+}
+
+.product-filter {
+
+}
+
+.filter-header {
+    font-size: 2rem;
+    
+}
+
+.filter-line--seprate{
+    width: 100%;
+    height: 2px;
+    background-color: var(--border-color);
+    margin: 10px 0;
+}
+
+.filter__bar {
+
+}
+.filter__price {
+
+}
+.filter__heading {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.filter__price--label{
+    text-align: center;
+    
+    
+}
+.filter__price--wrap {
+    font-size: 1.5rem;
+
+}
+.filter__price--item {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+.filter__size {
+
+} 
+
+.filter__size--wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.filter__size-item {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.size-item {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-color: var(--border-color);
+}
+.size-item .checkmark {
+    background-color: #01041e;
+}
+.size-item--label {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    text-align: center;
 }
