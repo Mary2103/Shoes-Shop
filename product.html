@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <base target="_blank" rel="noopener noreferrer">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +31,7 @@
 
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">Home</a>
+                            <a href="index.html" class="header__navbar-item-link">Home</a>
                         </li>
 
                         <li class="header__navbar-item">
@@ -90,7 +91,7 @@
             <div class="product__header">
                 <h1 class="product__header-title">Men's shoes</h1>
                 <nav class="product__header-nav">
-                    <input class="product__showFilter">
+                    <button class="product__showFilter" onclick="toggle()">
                         <span class="filter-text">Hide Filters</span>
                         <i class="fa-solid fa-filter"></i>
                     </button>
@@ -110,7 +111,7 @@
            <div class="product--wrapper">
                 <div class="grid_row">
                     <div class="grid_column-1-4">
-                        <div class="filter__bar--wrapper">
+                        <div class="filter__bar--wrapper" style="display: block;">
                             <div class="filter__bar--heading">
                                 <span class="filter-header">FILTER</span>
                                 <div class="filter-line--seprate"></div>
@@ -122,21 +123,29 @@
                                         <span class="filter__heading">Shop by price</span>
                                         <div class="filter__price--wrap">
 
-                                            <input type="checkbox" id="price1" class="filter__price--item" name="checkboxes">
-                                            <label class="filter__price--label" for="under1">Under 1.000.000đ</label>
-                                            <br>
+                                            <div class="filter__price-item">
+                                                <input type="checkbox" id="price1" class="price--item" name="checkboxes">
+                                                <label class="filter__price--label" for="price1">Under 1.000.000đ</label>
+                                            </div>
+                                            
 
-                                            <input type="checkbox" id="price2" class="filter__price--item" name="checkboxes">
-                                            <label class="filter__price--label" for="price2">1.000.000đ - 2.000.000đ</label>
-                                            <br>
+                                            <div class="filter__price-item">
+                                                <input type="checkbox" id="price2" class="price--item" name="checkboxes">
+                                                <label class="filter__price--label" for="price2">1.000.000đ - 2.000.000đ</label>
+                                            </div>
+                                            
 
-                                            <input type="checkbox" id="price3" class="filter__price--item" name="checkboxes">
-                                            <label class="filter__price--label" for="price3">2.000.001đ - 4.999.999đ</label>
-                                            <br>
+                                            <div class="filter__price-item">
+                                                <input type="checkbox" id="price3" class="price--item" name="checkboxes">
+                                                <label class="filter__price--label" for="price3">2.000.001đ - 4.999.999đ</label>
+                                            </div>
+                                            
 
-                                            <input type="checkbox" id="price3" class="filter__price--item" name="checkboxes">
-                                            <label class="filter__price--label" for="price3">Over 5.000.000đ</label>
-                                            <br>
+                                            <div class="filter__price-item">
+                                                <input type="checkbox" id="price3" class="price--item" name="checkboxes">
+                                                <label class="filter__price--label" for="price3">Over 5.000.000đ</label>
+                                            </div>
+                                            
                                         </div>
 
                                         <div class="filter-line--seprate"></div>
@@ -152,106 +161,125 @@
                                             </div>
                                             
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">36</label>
+                                                <input type="radio" id="size2" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size2">36</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">36.5</label>
+                                                <input type="radio" id="size3" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size3">36.5</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">37.5</label>
+                                                <input type="radio" id="size4" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size4">37.5</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">38</label>
+                                                <input type="radio" id="size5" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size5">38</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">39</label>
+                                                <input type="radio" id="size6" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size6">38.5</label>
+                                            </div>
+
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size7" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size7">39</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">40</label>
+                                                <input type="radio" id="size8" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size8">40</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">40.5</label>
+                                                <input type="radio" id="size9" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size9">40.5</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">41</label>
+                                                <input type="radio" id="size10" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size10">41</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">42</label>
+                                                <input type="radio" id="size11" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size11">42</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">42.5</label>
+                                                <input type="radio" id="size12" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size12">42.5</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">43</label>
+                                                <input type="radio" id="size13" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size13">43</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">44</label>
+                                                <input type="radio" id="size14" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size14">44</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">44.5</label>
+                                                <input type="radio" id="size15" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size15">44.5</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">45</label>
+                                                <input type="radio" id="size16" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size16">45</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">45.5</label>
+                                                <input type="radio" id="size17" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size17">45.5</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">46</label>
+                                                <input type="radio" id="size18" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size18">46</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">47</label>
+                                                <input type="radio" id="size19" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size19">47</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">47.5</label>
+                                                <input type="radio" id="size20" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size20">47.5</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">48.5</label>
+                                                <input type="radio" id="size21" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size21">48.5</label>
                                             </div>
 
                                             <div class="filter__size-item">
-                                                <input type="radio" id="size1" name="sizes"  class="size-item">
-                                                <label class="size-item--label" for="size1">39.5</label>
+                                                <input type="radio" id="size22" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size22">49.5</label>
                                             </div>
 
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size23" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size23">50.5</label>
+                                            </div>
 
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size24" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size24">51.5</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size25" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size25">52.5</label>
+                                            </div>
                   
                                             
                                         </div>
@@ -263,65 +291,65 @@
                                         <span class="filter__heading">Color</span>
 
                                         <div class="filter__color--wrap">
-                                            <a href="" class="filter__color--item">
-                                                <div class="color--item"></div>
-                                                <span class="color--item-label">Black</span>
-                                            </a>
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color1" name="colors" class="color--item">
+                                                <label for="color1" class="color--item-label">Black</label>
+                                            </div>
 
-                                            <a href="" class="filter__color--item">
-                                                <div class="color--item"></div>
-                                                <span class="color--item-label">Black</span>
-                                            </a>
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color2" name="colors" class="color--item">
+                                                <label for="color2" class="color--item-label">Blue</label>
+                                            </div>
 
-                                            <a href="" class="filter__color--item">
-                                                <div class="color--item"></div>
-                                                <span class="color--item-label">Black</span>
-                                            </a>
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color3" name="colors" class="color--item">
+                                                <label for="color3" class="color--item-label">Brown</label>
+                                            </div>
 
-                                            <a href="" class="filter__color--item">
-                                                <div class="color--item"></div>
-                                                <span class="color--item-label">Black</span>
-                                            </a>
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color4" name="colors" class="color--item">
+                                                <label for="color4" class="color--item-label">Green</label>
+                                            </div>
 
-                                            <a href="" class="filter__color--item">
-                                                <div class="color--item"></div>
-                                                <span class="color--item-label">Black</span>
-                                            </a>
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color5" name="colors" class="color--item">
+                                                <label for="color5" class="color--item-label">Grey</label>
+                                            </div>
 
-                                            <a href="" class="filter__color--item">
-                                                <div class="color--item"></div>
-                                                <span class="color--item-label">Black</span>
-                                            </a>
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color6" name="colors" class="color--item">
+                                                <label for="color6" class="color--item-label">Multi</label>
+                                            </div>
 
-                                            <a href="" class="filter__color--item">
-                                                <div class="color--item"></div>
-                                                <span class="color--item-label">Black</span>
-                                            </a>
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color7" name="colors" class="color--item">
+                                                <label for="color7" class="color--item-label">Orange</label>
+                                            </div>
 
-                                            <a href="" class="filter__color--item">
-                                                <div class="color--item"></div>
-                                                <span class="color--item-label">Black</span>
-                                            </a>
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color8" name="colors" class="color--item">
+                                                <label for="color8" class="color--item-label">Pink</label>
+                                            </div>
 
-                                            <a href="" class="filter__color--item">
-                                                <div class="color--item"></div>
-                                                <span class="color--item-label">Black</span>
-                                            </a>
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color9" name="colors" class="color--item">
+                                                <label for="color9" class="color--item-label">Purple</label>
+                                            </div>
 
-                                            <a href="" class="filter__color--item">
-                                                <div class="color--item"></div>
-                                                <span class="color--item-label">Black</span>
-                                            </a>
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color10" name="colors" class="color--item">
+                                                <label for="color10" class="color--item-label">Red</label>
+                                            </div>
 
-                                            <a href="" class="filter__color--item">
-                                                <div class="color--item"></div>
-                                                <span class="color--item-label">Black</span>
-                                            </a>
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color11" name="colors" class="color--item">
+                                                <label for="color11" class="color--item-label">White</label>
+                                            </div>
 
-                                            <a href="" class="filter__color--item">
-                                                <div class="color--item"></div>
-                                                <span class="color--item-label">Black</span>
-                                            </a>
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color12" name="colors" class="color--item">
+                                                <label for="color12" class="color--item-label">Yellow</label>
+                                            </div>
 
                                         </div>
                                     </div>
@@ -530,5 +558,6 @@
     
 
     <script type="text/javascript" src="./js/header.js"></script>
+    
 </body>
 </html>

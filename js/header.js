@@ -9,3 +9,16 @@ window.addEventListener("scroll", () => {
     header.classList.remove(toggleClass);
   }
 });
+
+function toggle (){
+
+  let button = document.getElementsByClassName(".filter__bar--wrapper");
+
+  if (button.style.display === "none") {
+    // Nếu là none, thì đổi thành block
+    button.style.display = "block";
+  } else {
+    // Nếu không phải none, thì đổi thành none
+    button.style.display = "none";
+  }
+}
