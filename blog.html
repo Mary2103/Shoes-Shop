@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- <base target="_blank" rel="noopener noreferrer">x -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@icon/themify-icons@1.0.1-alpha.3/themify-icons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- <header class="header">
+            <div class="header__logo" style="text-align:center; position:relative;">
+                <a href="/" class="header__logo-link">
+                    <svg viewBox="0 0 24 24" class="header__logo-img">
+                        <path fill-rule="evenodd" d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z" clip-rule="evenodd">
+
+                        </path>
+                    </svg>
+                </a>
+            </div> -->
+
+                
+                    
+                   
+                    
+               
+           
+        </header>  
+
+        <div class="blog__heading">
+            <div class="grid">
+                <H2>NIKE,INC. <br>
+                    <h2 style="color:var(--main-color);">BLOG </h2>
+                </H2>
+            </div>
+        </div>
+
+
+        <div class="blog__content-wrap">
+            <div class="grid">
+                <div class="blog__category-search">
+                    <div class="blog__category tab">
+                        <button class="blog__category-item tablinks active" onclick="tabs(event, 'All')" id="defaultOpen">All</button>
+                        <button class="blog__category-item tablinks" onclick="tabs(event, 'Releases')">Releases</button>
+                        <button class="blog__category-item tablinks" onclick="tabs(event, 'Statements')">Statements</button>
+                        <button class="blog__category-item tablinks" onclick="tabs(event, 'Reports')">Reports</button>
+                        <button class="blog__category-item tablinks" onclick="tabs(event, 'Resources')">Resources</button>
+                        <button class="blog__category-item tablinks" onclick="tabs(event, 'Media')">Media Assets</button>
+        
+                    </div>
+
+                    <button class="blog__search">
+                        <span>Search</span>
+                        <i class="header__navbar-icon fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                </div>
+
+                    <div id="All" class="blog__category-container tabcontent">
+                        <div class="grid">
+                            <div class="grid_row">
+                                <div class="grid_column-3 blog__item">
+                                    <a href="" class="blog__item--link">
+                                        <div class="blog__item-img" style="background-image: url(https://media.about.nike.com/images/e91bea06-6078-48a4-9f62-ea05fb79d177/wwc23-anthemkv-670x450-email.jpg?fm=jpg&q=80&fit=max&crop=668%2C446%2C0%2C0&w=1920);"></div>
+                                        <span class="blog__item-cateName">Releases</span>
+                                        <h3 class="blog__item-heading">Nike Champions Female Athletes, Presents “What The Football” Campaign</h3>
+                                        <span class="blog__item-postTime">July 17,2023</span>
+                                    </a>
+                                </div>
+
+                                <div class="grid_column-3 blog__item">
+                                    <a href="" class="blog__item--link">
+                                        <div class="blog__item-img" style="background-image: url(https://media.about.nike.com/images/7efbe6b2-ddd3-4529-81a5-479ff4025dee/infinityrn4-reactx-featured-1.jpg?fm=jpg&q=80&fit=max&crop=722%2C482%2C0%2C0&w=1920);"></div>
+                                        <span class="blog__item-cateName">Releases</span>
+                                        <h3 class="blog__item-heading">Nike Champions Female Athletes, Presents “What The Football” Campaign</h3>
+                                        <span class="blog__item-postTime">July 17,2023</span>
+                                    </a>
+                                </div>
+
+                                <div class="grid_column-3 blog__item">
+                                    <a href="" class="blog__item--link">
+                                        <div class="blog__item-img" style="background-image: url(https://media.about.nike.com/images/f8ed222d-36ec-4d4d-b506-0bfc8c7656b6/giannis-tianhe-court-art-piece.jpg?fm=jpg&q=80&fit=max&crop=3000%2C2000%2C0%2C0&w=640);"></div>
+                                        <span class="blog__item-cateName">Releases</span>
+                                        <h3 class="blog__item-heading">Nike Champions Female Athletes, Presents “What The Football” Campaign</h3>
+                                        <span class="blog__item-postTime">July 17,2023</span>
+                                    </a>
+                                </div>
+
+
+                                <div class="grid_column-3 blog__item">
+                                    <a href="" class="blog__item--link">
+                                        <div class="blog__item-img" style="background-image: url(https://media.about.nike.com/images/e91bea06-6078-48a4-9f62-ea05fb79d177/wwc23-anthemkv-670x450-email.jpg?fm=jpg&q=80&fit=max&crop=668%2C446%2C0%2C0&w=1920);"></div>
+                                        <span class="blog__item-cateName">Releases</span>
+                                        <h3 class="blog__item-heading">Nike Champions Female Athletes, Presents “What The Football” Campaign</h3>
+                                        <span class="blog__item-postTime">July 17,2023</span>
+                                    </a>
+                                </div>
+
+
+                                <div class="grid_column-3 blog__item">
+                                    <a href="" class="blog__item--link">
+                                        <div class="blog__item-img" style="background-image: url(https://media.about.nike.com/images/e91bea06-6078-48a4-9f62-ea05fb79d177/wwc23-anthemkv-670x450-email.jpg?fm=jpg&q=80&fit=max&crop=668%2C446%2C0%2C0&w=1920);"></div>
+                                        <span class="blog__item-cateName">Releases</span>
+                                        <h3 class="blog__item-heading">Nike Champions Female Athletes, Presents “What The Football” Campaign</h3>
+                                        <span class="blog__item-postTime">July 17,2023</span>
+                                    </a>
+                                </div>
+
+                                <div class="grid_column-3 blog__item">
+                                    <a href="" class="blog__item--link">
+                                        <div class="blog__item-img" style="background-image: url(https://media.about.nike.com/images/e91bea06-6078-48a4-9f62-ea05fb79d177/wwc23-anthemkv-670x450-email.jpg?fm=jpg&q=80&fit=max&crop=668%2C446%2C0%2C0&w=1920);"></div>
+                                        <span class="blog__item-cateName">Releases</span>
+                                        <h3 class="blog__item-heading">Nike Champions Female Athletes, Presents “What The Football” Campaign</h3>
+                                        <span class="blog__item-postTime">July 17,2023</span>
+                                    </a>
+                                </div>
+
+                                <div class="grid_column-3 blog__item">
+                                    <a href="" class="blog__item--link">
+                                        <div class="blog__item-img" style="background-image: url(https://media.about.nike.com/images/e91bea06-6078-48a4-9f62-ea05fb79d177/wwc23-anthemkv-670x450-email.jpg?fm=jpg&q=80&fit=max&crop=668%2C446%2C0%2C0&w=1920);"></div>
+                                        <span class="blog__item-cateName">Releases</span>
+                                        <h3 class="blog__item-heading">Nike Champions Female Athletes, Presents “What The Football” Campaign</h3>
+                                        <span class="blog__item-postTime">July 17,2023</span>
+                                    </a>
+                                </div>
+
+                                <div class="grid_column-3 blog__item">
+                                    <a href="" class="blog__item--link">
+                                        <div class="blog__item-img" style="background-image: url(https://media.about.nike.com/images/e91bea06-6078-48a4-9f62-ea05fb79d177/wwc23-anthemkv-670x450-email.jpg?fm=jpg&q=80&fit=max&crop=668%2C446%2C0%2C0&w=1920);"></div>
+                                        <span class="blog__item-cateName">Releases</span>
+                                        <h3 class="blog__item-heading">Nike Champions Female Athletes, Presents “What The Football” Campaign</h3>
+                                        <span class="blog__item-postTime">July 17,2023</span>
+                                    </a>
+                                </div>
+
+                                <div class="grid_column-3 blog__item">
+                                    <a href="" class="blog__item--link">
+                                        <div class="blog__item-img" style="background-image: url(https://media.about.nike.com/images/e91bea06-6078-48a4-9f62-ea05fb79d177/wwc23-anthemkv-670x450-email.jpg?fm=jpg&q=80&fit=max&crop=668%2C446%2C0%2C0&w=1920);"></div>
+                                        <span class="blog__item-cateName">Releases</span>
+                                        <h3 class="blog__item-heading">Nike Champions Female Athletes, Presents “What The Football” Campaign</h3>
+                                        <span class="blog__item-postTime">July 17,2023</span>
+                                    </a>
+                                </div>
+
+
+                                <div class="grid_column-3 blog__item">
+                                    <a href="" class="blog__item--link">
+                                        <div class="blog__item-img" style="background-image: url(https://media.about.nike.com/images/e91bea06-6078-48a4-9f62-ea05fb79d177/wwc23-anthemkv-670x450-email.jpg?fm=jpg&q=80&fit=max&crop=668%2C446%2C0%2C0&w=1920);"></div>
+                                        <span class="blog__item-cateName">Releases</span>
+                                        <h3 class="blog__item-heading">Nike Champions Female Athletes, Presents “What The Football” Campaign</h3>
+                                        <span class="blog__item-postTime">July 17,2023</span>
+                                    </a>
+                                </div>
+
+                                <div class="grid_column-3 blog__item">
+                                    <a href="" class="blog__item--link">
+                                        <div class="blog__item-img" style="background-image: url(https://media.about.nike.com/images/e91bea06-6078-48a4-9f62-ea05fb79d177/wwc23-anthemkv-670x450-email.jpg?fm=jpg&q=80&fit=max&crop=668%2C446%2C0%2C0&w=1920);"></div>
+                                        <span class="blog__item-cateName">Releases</span>
+                                        <h3 class="blog__item-heading">Nike Champions Female Athletes, Presents “What The Football” Campaign</h3>
+                                        <span class="blog__item-postTime">July 17,2023</span>
+                                    </a>
+                                </div>
+
+                                <div class="grid_column-3 blog__item">
+                                    <a href="" class="blog__item--link">
+                                        <div class="blog__item-img" style="background-image: url(https://media.about.nike.com/images/e91bea06-6078-48a4-9f62-ea05fb79d177/wwc23-anthemkv-670x450-email.jpg?fm=jpg&q=80&fit=max&crop=668%2C446%2C0%2C0&w=1920);"></div>
+                                        <span class="blog__item-cateName">Releases</span>
+                                        <h3 class="blog__item-heading">Nike Champions Female Athletes, Presents “What The Football” Campaign</h3>
+                                        <span class="blog__item-postTime">July 17,2023</span>
+                                    </a>
+                                </div>
+
+                                <div class="grid_column-3 blog__item">
+                                    <a href="" class="blog__item--link">
+                                        <div class="blog__item-img" style="background-image: url(https://media.about.nike.com/images/e91bea06-6078-48a4-9f62-ea05fb79d177/wwc23-anthemkv-670x450-email.jpg?fm=jpg&q=80&fit=max&crop=668%2C446%2C0%2C0&w=1920);"></div>
+                                        <span class="blog__item-cateName">Releases</span>
+                                        <h3 class="blog__item-heading">Nike Champions Female Athletes, Presents “What The Football” Campaign</h3>
+                                        <span class="blog__item-postTime">July 17,2023</span>
+                                    </a>
+                                </div>
+
+                                <div class="grid_column-3 blog__item">
+                                    <a href="" class="blog__item--link">
+                                        <div class="blog__item-img" style="background-image: url(https://media.about.nike.com/images/e91bea06-6078-48a4-9f62-ea05fb79d177/wwc23-anthemkv-670x450-email.jpg?fm=jpg&q=80&fit=max&crop=668%2C446%2C0%2C0&w=1920);"></div>
+                                        <span class="blog__item-cateName">Releases</span>
+                                        <h3 class="blog__item-heading">Nike Champions Female Athletes, Presents “What The Football” Campaign</h3>
+                                        <span class="blog__item-postTime">July 17,2023</span>
+                                    </a>
+                                </div>
+
+                                <div class="grid_column-3 blog__item">
+                                    <a href="" class="blog__item--link">
+                                        <div class="blog__item-img" style="background-image: url(https://media.about.nike.com/images/e91bea06-6078-48a4-9f62-ea05fb79d177/wwc23-anthemkv-670x450-email.jpg?fm=jpg&q=80&fit=max&crop=668%2C446%2C0%2C0&w=1920);"></div>
+                                        <span class="blog__item-cateName">Releases</span>
+                                        <h3 class="blog__item-heading">Nike Champions Female Athletes, Presents “What The Football” Campaign</h3>
+                                        <span class="blog__item-postTime">July 17,2023</span>
+                                    </a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Releases" class="blog__category-container tabcontent">
+                        <div class="grid">
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Release<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Release<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Release<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Release<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Release<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Release<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Release<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Release<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Release<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Release<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Release<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Release<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Release<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Release<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Release<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                        </div>
+                    
+                    </div>
+                  
+                    <div id="Statements" class="blog__category-container tabcontent">
+                        <div class="grid">
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Statement<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Statement<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Statement<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Statement<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Statement<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Statement<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Statement<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Statement<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Statement<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Statement<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Statement<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Statement<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Statement<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Statement<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Statement<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+                            
+                        </div>
+                    
+                    </div>
+
+                    <div id="Reports" class="blog__category-container tabcontent">
+                        <div class="grid">
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Report<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Report<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Report<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Report<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Report<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Report<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Report<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Report<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Report<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Report<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Report<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Report<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Report<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Report<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Report<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+                            
+                        </div>
+                    
+                    </div>
+
+                    <div id="Resources" class="blog__category-container tabcontent">
+                        <div class="grid">
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Policy<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Policy<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Policy<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Policy<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Policy<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Policy<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Policy<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Policy<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Policy<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Policy<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Policy<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Policy<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Policy<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Policy<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Policy<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+                            
+                        </div>
+                    
+                    </div>
+                    
+                    <div id="Media" class="blog__category-container tabcontent">
+                        <div class="grid">
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Collection<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Collection<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Collection<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Collection<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Collection<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Collection<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Collection<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Collection<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Collection<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Collection<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Collection<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Collection<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Collection<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Collection<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+
+                            <a href="" class="blog__item-line-link">
+                                <span class="blog__item-line-text">Collection<br>July 18, 2023</span>
+                                <h3 class="blog__item-line-content">Nike Luanches New Global Football-Inpired Wordouts on NTC App and Netflix</h3>
+                                <div class="blog__item-line-image">
+                                    <img src="https://media.about.nike.com/images/3a7094c3-9ad4-41e1-8271-c693986fc4c1/04-801194-02-wc23-sufa23-ntc-activityapp-om-bts-asisat-00348-14k.jpg?fm=jpg&q=80&fit=max&crop=2668%2C1777%2C0%2C949&w=640" alt="">
+                                </div>
+                            </a>
+                            
+                        </div>
+                    
+                    </div>
+            </div>
+        </div>
+
+
+
+        <p class="thank">Thank you for choosing us !</p>
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid_row">
+                    <div class="grid_column-2-4">
+                        <div class="footer--logo">
+                            <svg viewBox="0 0 24 24" class="footer--logo-img">
+                                <path fill-rule="evenodd" d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z" clip-rule="evenodd">
+    
+                                </path>
+                            </svg>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="grid_column-2-4">
+                        <a href="" class="footer-heading">FIND A STORE</a>
+                        <a href="" class="footer-heading">BECOME A MEMBER</a>
+                        <a href="" class="footer-heading">Send Us Feedback</a>
+                    </div>
+
+                    <div class="grid_column-2-4">
+                        <a href="" class="footer-heading">GET HELP</a>
+                        <a href="">Order Status</a>
+                        <a href="">Delivery</a>
+                        <a href="">Returns</a>
+                        <a href="">Payment Options</a>
+                        <a href="">Contact us</a>
+                    </div>
+
+                    <div class="grid_column-2-4">
+                        <a href="" class="footer-heading">ABOUT NIKE</a>
+                        <a href="">News</a>
+                        <a href="">Careers</a>
+                        <a href="">Investors</a>
+                        <a href="">Sustainability</a>
+                    </div>
+
+                    
+
+                    <div class="grid_column-2-4">
+                        <p class="footer-heading">CONNECT US</p>
+                        <div class="social--wrapper">
+                            <div class="icon facebook">
+                                <div class="tooltip">Facebook</div>
+                                <a href="https://www.facebook.com/nike">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="icon twitter">
+                                <div class="tooltip">Twitter</div>
+                                <a href="https://twitter.com/Nike">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </div>
+
+                            <div class="icon instagram">
+                                <div class="tooltip">Instagram</div>
+                                <a href="https://instagram.com/nike">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+
+                            <div class="icon youtube">
+                                <div class="tooltip">Youtube</div>
+                                <a href="https://www.youtube.com/user/nike">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+                           
+                       </div>
+                    </div>
+
+                
+                </div>
+            </div>
+            
+            <div class="footer_bottom">
+                <div class="grid">
+                    <div class="footer_bottom-wr">
+                        <div class="footer_location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            VietNam
+                        </div>
+                        <p class="footer_text">© 2023 Nike, Inc. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="./js/tabs.js"></script>
+
+    
+</body>
+</html>

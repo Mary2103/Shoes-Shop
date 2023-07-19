@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Men's Product</title>
     <base target="_blank" rel="noopener noreferrer">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -35,15 +35,23 @@
                         </li>
 
                         <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">Men</a>
+                            <a href="menproduct.html" class="header__navbar-item-link">Men</a>
                         </li>
 
                         <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">Women</a>
+                            <a href="womenProduct.html" class="header__navbar-item-link">Women</a>
                         </li>
 
                         <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link">Contact</a>
+                            <a href="kidProduct.html" class="header__navbar-item-link">Kids</a>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <a href="blog.html" class="header__navbar-item-link">Blog</a>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <a href="contact.html" class="header__navbar-item-link">Contact</a>
                         </li>
                     </ul>
 
@@ -85,7 +93,7 @@
                     
                 </div>
             </div>
-        </header>
+        </header>   
 
         <div class="grid">
             <div class="product__header">
@@ -97,10 +105,10 @@
                     </button>
 
                     <div class="product__header-sort">
-                        <select class="product__header-sort-btn">
+                        <select class="product__header-sort-btn" onchange="sortingPrice()">
                             <option value="0">Sort by:</option>
-                            <option value="1">Price:High-Low</option>
-                            <option value="2">Price:Low-High</option>
+                            <option value="az">Price:Low-High</option>
+                            <option value="za">Price:High-Low</option>
                         </select>
                     </div>
 
@@ -111,7 +119,7 @@
            <div class="product--wrapper">
                 <div class="grid_row">
                     <div class="grid_column-1-4">
-                        <div class="filter__bar--wrapper" style="display: block;">
+                        <div class="filter__bar--wrapper">
                             <div class="filter__bar--heading">
                                 <span class="filter-header">FILTER</span>
                                 <div class="filter-line--seprate"></div>
@@ -353,8 +361,14 @@
 
                                         </div>
                                     </div>
+
+                                    <div class="btn--filter">
+                                        <button type="submit" class="apply--filter-btn">Apply Filter</button>
+                                        <button type="button" class="clear--filter-btn">Clear All Filter</button>
+                                    </div>
                                 </form>
                             </div>
+                           
                         </div>
                     </div>
                 
@@ -397,152 +411,6 @@
 
                                     
                                 </div>
-
-                                <div class="grid_column-3">
-                                    <a href="" class="home__product--item">
-                                        <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/87d7e901-4d08-4456-9d62-07e821aff45b/air-max-90-futura-shoes-x9msLm.png);"></div>
-                                        
-                                        <h4 class="home__collection-item-heading">Nike Air Max 90 Futura</h4>
-                                        <h4 class="home__collection-category">Women's shoes</h4>
-                                        <div class="home__collection-item-price">
-                                            <span class="home__collection-item-currentPrice">$18.99</span>
-                                            <span class="home__collection-item-oldPrice">$20.99</span>
-                                        </div>
-                                        
-                                        <div class="home__collection-action">
-                                            <div class="home__collection-item__rating">
-                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
-                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
-                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
-                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
-                                                <i class=" fa-solid fa-star"></i>
-                                            </div>
-        
-                                            <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
-                                         
-                                        </div>
-                    
-                                        
-                                        <a href="" class="add-cart--link">
-                                            <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
-                                        Add to cart
-                                        </a>
-            
-                                        
-                                    </a>
-
-                                    
-                                </div>
-
-                                <div class="grid_column-3">
-                                    <a href="" class="home__product--item">
-                        
-                                        <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/4ff2fe4a-4f74-4189-82f0-3ea780f9389d/air-max-excee-shoes-XXdkKj.png);"></div>
-        
-                                        
-                                        <h4 class="home__collection-item-heading">Nike Air Max Excee</h4>
-                                        <h4 class="home__collection-category">Women's shoes</h4>
-                                        <div class="home__collection-item-price">
-                                            <span class="home__collection-item-currentPrice">$18.99</span>
-                                            <span class="home__collection-item-oldPrice">$20.99</span>
-                                        </div>
-                                                    
-                                        <div class="home__collection-action">
-                                            <div class="home__collection-item__rating">
-                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
-                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
-                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
-                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
-                                                <i class=" fa-solid fa-star"></i>
-                                            </div>
-        
-                                            <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
-                                         
-                                        </div>
-                        
-                                        <a href="" class="add-cart--link">
-                                            <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
-                                        Add to cart
-                                        </a>
-        
-                                        
-                                    </a>
-
-                                    
-                                </div>
-
-                                <div class="grid_column-3">
-                                    <a href="" class="home__product--item">
-                                        <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/597481c6-05ea-4b1a-86c2-ff798c592863/air-huarache-shoes-lCV2vJ.png);"></div>
-        
-                                        
-                                        <h4 class="home__collection-item-heading">Nike Air Huarache Premium</h4>
-                                        <h4 class="home__collection-category">Men's shoes</h4>
-                                        <div class="home__collection-item-price">
-                                            <span class="home__collection-item-currentPrice">$18.99</span>
-                                            <span class="home__collection-item-oldPrice">$20.99</span>
-                                        </div>
-                                                    
-                                        <div class="home__collection-action">
-                                            <div class="home__collection-item__rating">
-                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
-                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
-                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
-                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
-                                                <i class=" fa-solid fa-star"></i>
-                                            </div>
-        
-                                            <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
-                                         
-                                        </div>
-                        
-                                        <a href="" class="add-cart--link">
-                                            <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
-                                        Add to cart
-                                        </a>
-        
-                                        
-                                    </a>
-
-                                    
-                                </div>
-
-
-                                <div class="grid_column-3">
-                                    <a href="" class="home__product--item">
-                                        <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/f411a3ec-39b7-490e-b2c8-335264adb054/air-max-95-shoes-CwsxnW.png);"></div>
-        
-                                        
-                                        <h4 class="home__collection-item-heading">Nike Air Max 95</h4>
-                                        <h4 class="home__collection-category">Men's shoes</h4>
-                                        <div class="home__collection-item-price">
-                                            <span class="home__collection-item-currentPrice">$18.99</span>
-                                            <span class="home__collection-item-oldPrice">$20.99</span>
-                                        </div>
-                                                    
-                                        <div class="home__collection-action">
-                                            <div class="home__collection-item__rating">
-                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
-                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
-                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
-                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
-                                                <i class=" fa-solid fa-star"></i>
-                                            </div>
-        
-                                            <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
-                                         
-                                        </div>
-                        
-                                        <a href="" class="add-cart--link">
-                                            <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
-                                        Add to cart
-                                        </a>
-        
-                                        
-                                    </a>
-
-                                    
-                                </div>
                             </div>
 
 
@@ -558,6 +426,6 @@
     
 
     <script type="text/javascript" src="./js/header.js"></script>
-    
+    <script type="module" src="./js/app.js"></script>
 </body>
 </html>

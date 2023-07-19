@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Product</title>
+    <base target="_blank" rel="noopener noreferrer">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@icon/themify-icons@1.0.1-alpha.3/themify-icons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="grid">
+                <div class="header__navbar">
+                    <div class="header__logo">
+                        <a href="/" class="header__logo-link">
+                            <svg viewBox="0 0 24 24" class="header__logo-img">
+                                <path fill-rule="evenodd" d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z" clip-rule="evenodd">
+
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="index.html" class="header__navbar-item-link">Home</a>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <a href="menproduct.html" class="header__navbar-item-link">Men</a>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <a href="womenProduct.html" class="header__navbar-item-link">Women</a>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <a href="kidProduct.html" class="header__navbar-item-link">Kids</a>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <a href="blog.html" class="header__navbar-item-link">Blog</a>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <a href="contact.html" class="header__navbar-item-link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item-right">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            
+                        </li>
+
+                        <li class="header__navbar-item-right">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-cart-shopping"></i>
+                            </a>
+                            
+                        </li>
+                        
+                        <li class="header__navbar-item-right header__navbar-icon--user">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-regular fa-user"></i>
+                            </a>
+                            
+                            <ul class="header__navbar-user-list">
+                                <li>
+                                    <a href="" class="header__navbar--singup">Sign up</a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="header__navbar--login">Log in</a>
+                                </li>
+                            </ul>
+
+                        </li> 
+
+                    </ul>
+                    
+                   
+                    
+                </div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <div class="product__header">
+                <h1 class="product__header-title">Women's shoes</h1>
+                <nav class="product__header-nav">
+                    <button class="product__showFilter" onclick="toggle()">
+                        <span class="filter-text">Hide Filters</span>
+                        <i class="fa-solid fa-filter"></i>
+                    </button>
+
+                    <div class="product__header-sort">
+                        <select class="product__header-sort-btn" onchange="sortingPrice()">
+                            <option value="0">Sort by:</option>
+                            <option value="az">Price:Low-High</option>
+                            <option value="za">Price:High-Low</option>
+                        </select>
+                    </div>
+
+
+                </nav>
+            </div>
+
+           <div class="product--wrapper">
+                <div class="grid_row">
+                    <div class="grid_column-1-4">
+                        <div class="filter__bar--wrapper">
+                            <div class="filter__bar--heading">
+                                <span class="filter-header">FILTER</span>
+                                <div class="filter-line--seprate"></div>
+                            </div>
+
+                            <div class="filter__bar">
+                                <form action="">
+                                    <div class="filter__price">
+                                        <span class="filter__heading">Shop by price</span>
+                                        <div class="filter__price--wrap">
+
+                                            <div class="filter__price-item">
+                                                <input type="checkbox" id="price1" class="price--item" name="checkboxes">
+                                                <label class="filter__price--label" for="price1">Under 1.000.000đ</label>
+                                            </div>
+                                            
+
+                                            <div class="filter__price-item">
+                                                <input type="checkbox" id="price2" class="price--item" name="checkboxes">
+                                                <label class="filter__price--label" for="price2">1.000.000đ - 2.000.000đ</label>
+                                            </div>
+                                            
+
+                                            <div class="filter__price-item">
+                                                <input type="checkbox" id="price3" class="price--item" name="checkboxes">
+                                                <label class="filter__price--label" for="price3">2.000.001đ - 4.999.999đ</label>
+                                            </div>
+                                            
+
+                                            <div class="filter__price-item">
+                                                <input type="checkbox" id="price3" class="price--item" name="checkboxes">
+                                                <label class="filter__price--label" for="price3">Over 5.000.000đ</label>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="filter-line--seprate"></div>
+                                    </div>
+
+                                    <div class="filter__size">
+                                        <span class="filter__heading">Size</span>
+
+                                        <div class="filter__size--wrap">
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size1" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size1">35.5</label>
+                                            </div>
+                                            
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size2" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size2">36</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size3" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size3">36.5</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size4" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size4">38</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size5" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size5">38.5</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size6" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size6">39</label>
+                                            </div>
+
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size7" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size7">39</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size8" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size8">40</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size9" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size9">40.5</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size10" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size10">42</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size11" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size11">42</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size12" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size12">42.5</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size13" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size13">43</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size14" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size14">44</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size15" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size15">44.5</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size16" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size16">45</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size17" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size17">45.5</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size18" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size18">46</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size19" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size19">47</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size20" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size20">47.5</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size21" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size21">48</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size22" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size22">48.5</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size23" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size23">50</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size24" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size24">51.5</label>
+                                            </div>
+
+                                            <div class="filter__size-item">
+                                                <input type="radio" id="size25" name="sizes"  class="size-item">
+                                                <label class="size-item--label" for="size25">52.5</label>
+                                            </div>
+                  
+                                            
+                                        </div>
+
+                                        <div class="filter-line--seprate"></div>
+                                    </div>
+
+                                    <div class="filter__color">
+                                        <span class="filter__heading">Color</span>
+
+                                        <div class="filter__color--wrap">
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color1" name="colors" class="color--item">
+                                                <label for="color1" class="color--item-label">Black</label>
+                                            </div>
+
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color2" name="colors" class="color--item">
+                                                <label for="color2" class="color--item-label">Blue</label>
+                                            </div>
+
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color3" name="colors" class="color--item">
+                                                <label for="color3" class="color--item-label">Brown</label>
+                                            </div>
+
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color4" name="colors" class="color--item">
+                                                <label for="color4" class="color--item-label">Green</label>
+                                            </div>
+
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color5" name="colors" class="color--item">
+                                                <label for="color5" class="color--item-label">Grey</label>
+                                            </div>
+
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color6" name="colors" class="color--item">
+                                                <label for="color6" class="color--item-label">Multi</label>
+                                            </div>
+
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color7" name="colors" class="color--item">
+                                                <label for="color7" class="color--item-label">Orange</label>
+                                            </div>
+
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color8" name="colors" class="color--item">
+                                                <label for="color8" class="color--item-label">Pink</label>
+                                            </div>
+
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color9" name="colors" class="color--item">
+                                                <label for="color9" class="color--item-label">Purple</label>
+                                            </div>
+
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color10" name="colors" class="color--item">
+                                                <label for="color10" class="color--item-label">Red</label>
+                                            </div>
+
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color11" name="colors" class="color--item">
+                                                <label for="color11" class="color--item-label">White</label>
+                                            </div>
+
+                                            <div class="filter__color--item">
+                                                <input type="checkbox" id="color12" name="colors" class="color--item">
+                                                <label for="color12" class="color--item-label">Yellow</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="btn--filter">
+                                        <button type="submit" class="apply--filter-btn">Apply Filter</button>
+                                        <button type="button" class="clear--filter-btn">Clear All Filter</button>
+                                    </div>
+                                </form>
+                            </div>
+                           
+                        </div>
+                    </div>
+                
+
+                    <div class="grid_column-3-4">
+                        <div class="product">
+                            <div class="grid_row">
+                                <div class="grid_column-3">
+                                    <a href="" class="home__product--item">
+                                        <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/87d7e901-4d08-4456-9d62-07e821aff45b/air-max-90-futura-shoes-x9msLm.png);"></div>
+                                        
+                                        <h4 class="home__collection-item-heading">Nike Air Max 90 Futura</h4>
+                                        <h4 class="home__collection-category">Women's shoes</h4>
+                                        <div class="home__collection-item-price">
+                                            <span class="home__collection-item-currentPrice">$18.99</span>
+                                            <span class="home__collection-item-oldPrice">$20.99</span>
+                                        </div>
+                                        
+                                        <div class="home__collection-action">
+                                            <div class="home__collection-item__rating">
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class=" fa-solid fa-star"></i>
+                                            </div>
+        
+                                            <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                         
+                                        </div>
+                    
+                                        
+                                        <a href="" class="add-cart--link">
+                                            <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                        Add to cart
+                                        </a>
+            
+                                        
+                                    </a>
+
+                                    
+                                </div>
+
+                                <div class="grid_column-3">
+                                    <a href="" class="home__product--item">
+                                        <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/87d7e901-4d08-4456-9d62-07e821aff45b/air-max-90-futura-shoes-x9msLm.png);"></div>
+                                        
+                                        <h4 class="home__collection-item-heading">Nike Air Max 90 Futura</h4>
+                                        <h4 class="home__collection-category">Women's shoes</h4>
+                                        <div class="home__collection-item-price">
+                                            <span class="home__collection-item-currentPrice">$18.99</span>
+                                            <span class="home__collection-item-oldPrice">$20.99</span>
+                                        </div>
+                                        
+                                        <div class="home__collection-action">
+                                            <div class="home__collection-item__rating">
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class=" fa-solid fa-star"></i>
+                                            </div>
+        
+                                            <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                         
+                                        </div>
+                    
+                                        
+                                        <a href="" class="add-cart--link">
+                                            <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                        Add to cart
+                                        </a>
+            
+                                        
+                                    </a>
+
+                                    
+                                </div>
+
+                                <div class="grid_column-3">
+                                    <a href="" class="home__product--item">
+                        
+                                        <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/4ff2fe4a-4f74-4189-82f0-3ea780f9389d/air-max-excee-shoes-XXdkKj.png);"></div>
+        
+                                        
+                                        <h4 class="home__collection-item-heading">Nike Air Max Excee</h4>
+                                        <h4 class="home__collection-category">Women's shoes</h4>
+                                        <div class="home__collection-item-price">
+                                            <span class="home__collection-item-currentPrice">$18.99</span>
+                                            <span class="home__collection-item-oldPrice">$20.99</span>
+                                        </div>
+                                                    
+                                        <div class="home__collection-action">
+                                            <div class="home__collection-item__rating">
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class=" fa-solid fa-star"></i>
+                                            </div>
+        
+                                            <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                         
+                                        </div>
+                        
+                                        <a href="" class="add-cart--link">
+                                            <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                        Add to cart
+                                        </a>
+        
+                                        
+                                    </a>
+
+                                    
+                                </div>
+
+                                <div class="grid_column-3">
+                                    <a href="" class="home__product--item">
+                                        <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/597481c6-05ea-4b1a-86c2-ff798c592863/air-huarache-shoes-lCV2vJ.png);"></div>
+        
+                                        
+                                        <h4 class="home__collection-item-heading">Nike Air Huarache Premium</h4>
+                                        <h4 class="home__collection-category">Men's shoes</h4>
+                                        <div class="home__collection-item-price">
+                                            <span class="home__collection-item-currentPrice">$18.99</span>
+                                            <span class="home__collection-item-oldPrice">$20.99</span>
+                                        </div>
+                                                    
+                                        <div class="home__collection-action">
+                                            <div class="home__collection-item__rating">
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class=" fa-solid fa-star"></i>
+                                            </div>
+        
+                                            <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                         
+                                        </div>
+                        
+                                        <a href="" class="add-cart--link">
+                                            <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                        Add to cart
+                                        </a>
+        
+                                        
+                                    </a>
+
+                                    
+                                </div>
+
+
+                                <div class="grid_column-3">
+                                    <a href="" class="home__product--item">
+                                        <div class="home__product-item-img" style="background-image: url(https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/f411a3ec-39b7-490e-b2c8-335264adb054/air-max-95-shoes-CwsxnW.png);"></div>
+        
+                                        
+                                        <h4 class="home__collection-item-heading">Nike Air Max 95</h4>
+                                        <h4 class="home__collection-category">Men's shoes</h4>
+                                        <div class="home__collection-item-price">
+                                            <span class="home__collection-item-currentPrice">$18.99</span>
+                                            <span class="home__collection-item-oldPrice">$20.99</span>
+                                        </div>
+                                                    
+                                        <div class="home__collection-action">
+                                            <div class="home__collection-item__rating">
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class="home-collection-item__star-gold fa-solid fa-star"></i>
+                                                <i class=" fa-solid fa-star"></i>
+                                            </div>
+        
+                                            <i class="home__collection-item-navigate-icon fa-solid fa-arrow-up-long"></i>
+                                         
+                                        </div>
+                        
+                                        <a href="" class="add-cart--link">
+                                            <i class="add-cart--icon fa-solid fa-cart-shopping"></i>
+                                        Add to cart
+                                        </a>
+        
+                                        
+                                    </a>
+
+                                    
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+             
+                </div>
+           </div>
+        </div>
+    </div>
+    
+
+    <script type="text/javascript" src="./js/header.js"></script>
+    <script type="module" src="./js/app.js"></script>
+    
+</body>
+</html>
