@@ -1,9 +1,7 @@
 import data from './data.js';
 
-
-console.log(data);
 const products = document.querySelector(".product .grid_row");
-// const new_products = document.querySelector(".body-make-up");
+
 // console.log(new_products);
 // console.log(products);
 
@@ -100,8 +98,6 @@ window.sortingPrice = function() {
     const co = currentArray.map((item) => ham(item.name, item.category, item.img, item.newPrice, item.oldPrice));
     products.innerHTML = co.join("");
 }
-
-
 
 
 
