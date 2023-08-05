@@ -62,6 +62,8 @@ if (title === "Men's shoes"){
     currentArray = Shoes;
     const courses = Shoes.map((item) => ham(item.name,item.category,item.img,item.newPrice,item.oldPrice))
     products.innerHTML = courses.join("");
+
+    
 }
 
 
