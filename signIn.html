@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@icon/themify-icons@1.0.1-alpha.3/themify-icons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__logo" style="text-align:center; position:relative;">
+                <a href="/" class="header__logo-link">
+                    <svg viewBox="0 0 24 24" class="header__logo-img">
+                        <path fill-rule="evenodd" d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z" clip-rule="evenodd">
+
+                        </path>
+                    </svg>
+                </a>
+            </div>   
+        </header> 
+
+        <div class="div__loginView">
+            <header class="view__header"> YOUR ACCOUNT FOR EVERYTHING NIKE</header>
+            <form action="" class="loginForm">
+                <div class="field">
+                    <label for="email"></label>
+                    <input autocomplete="off" class="field__item" type="email" placeholder="Email address" name="email" required>
+                    <span class="field__err">Please enter a valid email address.</span>
+                </div>
+
+                <div class="field">
+                    <label for="pass"></label>
+                    <input class="field__item" type="password" placeholder="Password" name="pass" required>
+                    <span class="field__err">Please enter a password.</span>
+
+                </div>
+            </form>
+
+            <div id="forGotPass">
+                <a href="" class="ForgotPass-link">Forgotten your password?</a>
+            </div>
+
+            <p class="terms">
+                By logging in, you agree to Nike's 
+                <a href="">Privacy Policy</a>
+                and
+                <a href="">Terms of Use</a>
+            </p>
+
+            <button onclick="validSignIn()" class="signInButton" type="submit">SIGN IN</button>
+
+            <p class="notMember">
+                Not a Member?
+                <a href="" class="join">Join us</a>
+            </p>
+        </div>
+
+
+
+
+
+
+
+        <p class="thank">Thank you for choosing us !</p>
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid_row">
+                    <div class="grid_column-2-4">
+                        <div class="footer--logo">
+                            <svg viewBox="0 0 24 24" class="footer--logo-img">
+                                <path fill-rule="evenodd" d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z" clip-rule="evenodd">
+    
+                                </path>
+                            </svg>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="grid_column-2-4">
+                        <a href="" class="footer-heading">FIND A STORE</a>
+                        <a href="" class="footer-heading">BECOME A MEMBER</a>
+                        <a href="" class="footer-heading">Send Us Feedback</a>
+                    </div>
+
+                    <div class="grid_column-2-4">
+                        <a href="" class="footer-heading">GET HELP</a>
+                        <a href="">Order Status</a>
+                        <a href="">Delivery</a>
+                        <a href="">Returns</a>
+                        <a href="">Payment Options</a>
+                        <a href="">Contact us</a>
+                    </div>
+
+                    <div class="grid_column-2-4">
+                        <a href="" class="footer-heading">ABOUT NIKE</a>
+                        <a href="">News</a>
+                        <a href="">Careers</a>
+                        <a href="">Investors</a>
+                        <a href="">Sustainability</a>
+                    </div>
+
+                    
+
+                    <div class="grid_column-2-4">
+                        <p class="footer-heading">CONNECT US</p>
+                        <div class="social--wrapper">
+                            <div class="icon facebook">
+                                <div class="tooltip">Facebook</div>
+                                <a href="https://www.facebook.com/nike">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="icon twitter">
+                                <div class="tooltip">Twitter</div>
+                                <a href="https://twitter.com/Nike">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </div>
+
+                            <div class="icon instagram">
+                                <div class="tooltip">Instagram</div>
+                                <a href="https://instagram.com/nike">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+
+                            <div class="icon youtube">
+                                <div class="tooltip">Youtube</div>
+                                <a href="https://www.youtube.com/user/nike">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+                           
+                       </div>
+                    </div>
+
+                
+                </div>
+            </div>
+            
+            <div class="footer_bottom">
+                <div class="grid">
+                    <div class="footer_bottom-wr">
+                        <div class="footer_location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            VietNam
+                        </div>
+                        <p class="footer_text">© 2023 Nike, Inc. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="./js/header.js"></script>
+    <script type="text/javascript" src="./js/validSignIn.js"></script>
+
+</body>
+</html>

@@ -455,7 +455,6 @@
 }
 .home__trending--product-wrapper {
     display: flex;
-    overflow-x: hidden;
     position: relative;
     padding-left: 10px;
     max-width: calc(200px *4 + 80px);
@@ -1535,14 +1534,14 @@
     font-size: 2.5rem;
     text-align: center;
 }
-/* .product {
+.product {
     overflow-y: scroll;
-    height: 1500px;
+    height: 1340px;
    
 }
 .product::-webkit-scrollbar {
     display: none;
-} */
+}
 
 .btn--filter {
     display: flex;
@@ -1573,8 +1572,28 @@
 }
 
 .listPage {
-    margin: 100px 0;
+    margin: 50px 0;
+    text-align: center;
+    list-style: none;
 }
+
+.listPage li {
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    font-weight: 600;
+    cursor: pointer;   
+    border: 1px solid var(--border-color);
+}
+
+.listPage .active {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+
+
 
 /* BLOG CSS */
 
@@ -2359,3 +2378,113 @@ details > summary::-webkit-details-marker {
 .search__close:hover {
     color: #707072;
 }
+
+/* sign in */
+.div__loginView {
+    margin-top: 100px;
+    text-align: center;
+    
+}
+.view__header {
+    margin-bottom: 50px;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3rem;
+
+}
+.loginForm {
+    width: 450px;
+    text-align: center;
+    margin: 36px auto;
+    text-align: center;
+}
+.field {   
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 40px;
+    position: relative;
+}
+.field {
+    position: relative;
+}
+
+.field__err {
+    display: none;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+    color: #ff6565;
+}
+
+
+.field__err:invalid:focus {
+    border: 1px solid red;
+
+}
+
+.field__item:invalid:focus ~ .field__err {
+    display: block;
+}
+
+.field__item:valid {
+    border-color: #2ab885;
+}
+
+.loginForm .field__item {
+    min-width: 100%;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    padding: 0 16px;
+    color: #8d8d8d;
+    border-radius: 2px;
+}
+
+#forGotPass {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.ForgotPass-link {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #bcbcbc;
+}
+.terms {
+    font-size: 1.2rem;
+    padding: 3px 0 24px;;
+}
+
+.terms a {
+    color: #8d8d8d;
+    text-decoration: underline;
+}
+
+.signInButton {
+    width: 300px;
+    height: 40px;
+    border: none;
+    background-color: black;
+    color: var(--white-color);
+    font-weight: 600;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.notMember a {
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.notMember {
+    margin-bottom: 100px;
+}
+
+.loginEmail p {
+    
+}
+
+
+
